@@ -25,8 +25,11 @@ class Helper
      */
     public static function updateFields($cid, $fields)
     {
-        $db = \Typecho\Db::get();
-        return $db->query($db->update('table.contents')->rows($fields)->where('cid = ?', $cid));
+        $fields = array_filter($fields);
+        if($fields){
+            $db = \Typecho\Db::get();
+            return $db->query($db->update('table.contents')->rows($fields)->where('cid = ?', $cid));
+        }
     }
 
     /**
