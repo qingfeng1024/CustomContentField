@@ -11,7 +11,7 @@ Typecho 页面和文章自定义编辑字段插件
 
 将文件夹重命名为`CustomContentField`，然后拷贝至`usr/plugins/`下，最后在后台->插件处安装。
 
-## 演示
+## 演示 (给joe主题添加文章阅读量和点赞数可编辑功能)
 1. 设置自定义字段
 ![image](https://user-images.githubusercontent.com/47711183/211481914-201ceeb1-6129-4cc9-8faf-4e0435ff76b9.png)
 2. 新增或者编辑文章
